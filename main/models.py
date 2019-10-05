@@ -9,3 +9,9 @@ class Company(models.Model):
 
     class Meta:
         db_table = 'company'
+
+    def __str__(self):
+        return self.name.title()
+
+    def __repr__(self):
+        return self.name.title()
