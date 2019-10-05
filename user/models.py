@@ -10,11 +10,11 @@ class User(AbstractUser):
     birth_date = models.DateField(blank=True, null=True)
 
     designation_choices = [
-        ('1', 'Developer', ),
-        ('2', 'Sales Manager', ),
-        ('3', 'Analyst', ),
-        ('4', 'Operations', ),
-        ('5', 'Account Manager')
+        (1, 'Developer', ),
+        (2, 'Sales Manager', ),
+        (3, 'Analyst', ),
+        (4, 'Operations', ),
+        (5, 'Account Manager')
     ]
     designation = models.PositiveSmallIntegerField(choices=designation_choices, default='1')
 
